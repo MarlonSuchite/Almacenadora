@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SecurityRoutingModule } from './security-routing.module';
+import { RouterModule, Routes } from '@angular/router';
 
+const routes: Routes = [
 
+]
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    SecurityRoutingModule
+    RouterModule.forChild(routes)
   ]
 })
-export class SecurityModule { }
+export class SharedRoutingModule { }
