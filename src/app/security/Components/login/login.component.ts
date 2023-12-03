@@ -20,14 +20,14 @@ export class LoginComponent {
 
   buildForm(): void {
     this.form = this.fb.group({
-      username: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required]
     });
   }
 
   login() {
     const datos = {
-      username: this.form.get('username')?.value,
+      email: this.form.get('email')?.value,
       password: this.form.get('password')?.value
     };
     this._authService.login(datos);

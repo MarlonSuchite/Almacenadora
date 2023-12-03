@@ -9,6 +9,8 @@ export class AuthService {
   }
 
   login(values: any) {
+    const data = [values.email, values.password];
+    localStorage.setItem('data', data.join());
     return console.log(values);
   }
 }

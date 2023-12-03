@@ -50,6 +50,8 @@
             margin-top: 1rem;
             color: rgba(0 0 0 / .5);
             cursor: pointer;
+            font-weight: bold;
+            transition: 300ms;
 
             &:hover {
                 color: rgba(0 0 0 / .8);
@@ -59,4 +61,14 @@
         }
     }
 
+}
+
+mat-form-field {
+    mat-error {
+        display: none !important;
+    }
+
+    mat-error:first-child {
+        display: block !important;
+    }
 }
