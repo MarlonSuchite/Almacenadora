@@ -4,6 +4,7 @@ import { SecurityRoutingModule } from './security-routing.module';
 import { LoginComponent } from './Components/login/login.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [LoginComponent],
@@ -11,7 +12,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     CommonModule,
     SecurityRoutingModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    ReactiveFormsModule
   ]
 })
 export class SecurityModule {}

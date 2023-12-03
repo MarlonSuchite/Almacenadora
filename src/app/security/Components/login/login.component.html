@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="tarjeta-login card px-5">
+  <div class="tarjeta-login card px-4">
     <section class="logo">
       <h2>Almacenadora</h2>
       <img src="../../../../assets/abrir-caja.png" alt="Logo" />
@@ -7,20 +7,24 @@
 
     <!-- Formulario -->
     <section class="form">
-      <form class="row">
+      <form class="row" [formGroup]="form">
         <mat-form-field class="col-12">
           <mat-label>Username</mat-label>
-          <input matInput />
+          <input matInput formControlName="username" />
         </mat-form-field>
 
+        <p>
+          {{ form.get('username')!.value }}
+          {{ form.get('password')!.value }}
+        </p>
         <mat-form-field class="col-12">
           <mat-label>Password</mat-label>
-          <input matInput />
+          <input matInput formControlName="password" />
         </mat-form-field>
       </form>
 
       <div class="button">
-        <button class="btn btn-dark">Iniciar Sesion</button>
+        <button class="btn btn-dark" (click)="login()">Iniciar Sesion</button>
       </div>
     </section>
     <div class="password">

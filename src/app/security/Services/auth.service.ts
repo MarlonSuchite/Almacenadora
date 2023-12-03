@@ -7,4 +7,8 @@ export class AuthService {
   constructor() {
     //Hola
   }
+
+  login(values: any) {
+    return console.log(values);
+  }
 }
