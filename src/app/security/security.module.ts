@@ -5,6 +5,7 @@ import { LoginComponent } from './Components/login/login.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [LoginComponent],
@@ -13,7 +14,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     SecurityRoutingModule,
     MatInputModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatIconModule
   ]
 })
 export class SecurityModule {}

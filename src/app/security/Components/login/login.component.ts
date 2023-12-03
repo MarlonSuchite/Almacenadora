@@ -9,6 +9,7 @@ import { AuthService } from '../../Services/auth.service';
 })
 export class LoginComponent {
   form!: FormGroup;
+  hide = true;
 
   constructor(
     private fb: FormBuilder,
