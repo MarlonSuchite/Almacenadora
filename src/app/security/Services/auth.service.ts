@@ -13,4 +13,8 @@ export class AuthService {
     localStorage.setItem('data', data.join());
     return console.log(values);
   }
+
+  newPassword(values: any) {
+    return console.log(values);
+  }
 }
