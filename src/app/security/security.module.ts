@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { ForgotPasswordComponent } from './Components/forgot-password/forgot-password.component';
+import { MatStepperModule } from '@angular/material/stepper';
 
 @NgModule({
   declarations: [LoginComponent, ForgotPasswordComponent],
@@ -16,7 +17,8 @@ import { ForgotPasswordComponent } from './Components/forgot-password/forgot-pas
     MatInputModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatIconModule
+    MatIconModule,
+    MatStepperModule
   ]
 })
 export class SecurityModule {}
