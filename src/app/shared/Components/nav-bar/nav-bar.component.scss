@@ -26,7 +26,6 @@
             h2 {
                 margin-top: 20px;
                 margin-left: 5px;
-                color: white;
                 text-transform: uppercase;
                 font-weight: 100;
                 text-shadow: 0px 0px 1px black;
@@ -51,6 +50,15 @@
             flex-wrap: wrap;
             font-weight: 900;
 
+
+            .active {
+                font-weight: 1000;
+                text-shadow: 0px 0px 1px black;
+                color: rgb(255, 213, 0);
+
+
+            }
+
             a {
                 margin-left: 2rem;
                 text-decoration: none;
@@ -66,6 +74,8 @@
                     color: white;
                     --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%)
                 }
+
+
 
                 &::after {
                     content: "";
@@ -85,22 +95,23 @@
     }
 }
 
+
 @media (max-width: 700px) {
 
-    .nav{
+    .nav {
 
-        .logo{
+        .logo {
             width: 100%;
             justify-content: center;
         }
 
-        .nav-menu{
+        .nav-menu {
             margin: auto;
         }
     }
 
-        
-        
+
+
     /*   .nav-label {
         display: block;
         cursor: pointer;
