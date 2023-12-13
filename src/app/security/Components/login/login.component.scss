@@ -1,8 +1,6 @@
 .container {
     min-width: 100%;
-    min-height: 100vh;
     padding: 0.1px;
-    background-color: #f1f7fc;
 
     .tarjeta-login {
         min-width: 300px;
@@ -10,7 +8,6 @@
         height: 450px;
         background-color: white;
         margin: auto;
-        margin-top: 4.5rem;
         padding: 0.1px;
 
         .logo {
@@ -32,13 +29,13 @@
         .form {
             width: 100%;
 
-            
+
 
             .button {
                 display: flex;
                 justify-content: center;
 
-                button{
+                button {
                     width: 100%;
                 }
             }
