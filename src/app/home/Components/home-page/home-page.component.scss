@@ -1,0 +1,117 @@
+i {
+    font-size: 40px;
+}
+
+.container {
+    min-width: 100%;
+    padding: 0;
+
+
+
+
+    .img {
+        width: 100%;
+        height: 50vw;
+        min-height: 60vh;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.7)), url(../../../../assets/encabezado.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        border-radius: 0px 0px 1rem 1rem;
+
+        .h2 {
+            font-size: 5rem;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 0px 0px 5px black;
+            line-height: 50px;
+            color: aliceblue;
+            position: relative;
+            top: 40%;
+        }
+
+        .titulo {
+            color: rgb(255, 213, 0);
+            font-weight: 900;
+        }
+    }
+
+    .servicios-titulo {
+        text-align: center;
+        width: 100%;
+        margin-top: 5rem;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: bold;
+
+        }
+    }
+
+    .servicios {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem;
+
+        .servi {
+            margin: 2rem;
+            height: 200px;
+            text-align: center;
+            flex-grow: 2;
+            flex-basis: 200px;
+
+            i {
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    .solicitar-informacion{
+        text-align: center;        
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        .img {
+
+            .h2 {
+                font-size: 3.5rem;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 765px) {
+    .container {
+        .img {
+
+            .h2 {
+                font-size: 2.5rem;
+                top: 30%;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 430px) {
+    .container {
+        .img {
+
+            .h2 {
+                font-size: 2rem;
+            }
+        }
+
+    }
+}
