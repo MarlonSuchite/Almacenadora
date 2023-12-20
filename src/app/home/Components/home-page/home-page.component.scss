@@ -73,13 +73,13 @@ i {
         }
     }
 
-    .solicitar-informacion{
-        text-align: center;        
+    .solicitar-informacion {
+        text-align: center;
     }
-}
 
-@media (max-width: 1000px) {
-    .container {
+
+    /* Media quey */
+    @media (max-width: 1000px) {
         .img {
 
             .h2 {
@@ -87,12 +87,9 @@ i {
                 text-align: center;
             }
         }
-
     }
-}
 
-@media (max-width: 765px) {
-    .container {
+    @media (max-width: 765px) {
         .img {
 
             .h2 {
@@ -100,18 +97,15 @@ i {
                 top: 30%;
             }
         }
-
     }
-}
 
-@media (max-width: 430px) {
-    .container {
+    @media (max-width: 430px) {
         .img {
 
             .h2 {
                 font-size: 2rem;
             }
         }
-
     }
+
 }
