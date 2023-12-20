@@ -1,0 +1,61 @@
+.footer {
+    width: 100%;
+    min-height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: rgb(185, 189, 192);
+    background-color: rgba(0 0 0 / .9);
+    text-align: center;
+
+    .seccion-1 {
+        width: 350px;
+        text-align: center;
+
+
+        .logo {
+            width: 220px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+    
+            h2 {
+                margin-top: 20px;
+                margin-left: 5px;
+                text-transform: uppercase;
+                font-weight: 100;
+                text-shadow: 0px 0px 1px white;
+                color: rgb(255, 213, 0);
+    
+                span {
+                    color: rgb(185, 189, 192);
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .redes {
+            width: 70%;
+            margin: auto;
+
+            i {
+                font-size: 30px;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .seccion-2{
+        width: 300px;
+        margin-top: 1rem;
+        
+    }
+
+    .seccion-3{
+        width: 350px;
+
+        margin-top: 1rem;
+    }
+}
