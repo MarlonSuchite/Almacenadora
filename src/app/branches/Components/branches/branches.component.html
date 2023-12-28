@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" *ngIf="mostrar">
   <div class="sucursales-titulo">
     <h2>Sucur<span class="amarillo">sales</span></h2>
   </div>
@@ -17,9 +17,16 @@
             <ng-template #inactivo>Inactivo</ng-template>
           </p>
           <p class="card-text">Bodegas Disponibles:{{ sucursal.storage }}</p>
-          <a href="#" class="btn btn-outline-warning">Go somewhere</a>
+          <a
+            [routerLink]="['branch', sucursal.id]"
+            class="btn btn-outline-warning"
+            >Go somewhere</a
+          >
         </div>
       </div>
     </section>
   </div>
 </div>
+
+<!-- <app-branch *ngIf="!mostrar" [mostar]="mostrar" (mostrarCambio)="hola($event)"></app-branch> -->
+<router-outlet></router-outlet>
