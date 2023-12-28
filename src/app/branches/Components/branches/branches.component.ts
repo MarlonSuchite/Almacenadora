@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -6,16 +6,9 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './branches.component.html',
   styleUrls: ['./branches.component.scss']
 })
-export class BranchesComponent implements OnInit {
+export class BranchesComponent {
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute
   ) {}
-
-  ngOnInit(): void {
-    this.router.navigate(['/branches/branch-list']);
-    /* this.activatedRoute.paramMap.subscribe(params => {
-      console.log('Hola');
-    }); */
-  }
 }
