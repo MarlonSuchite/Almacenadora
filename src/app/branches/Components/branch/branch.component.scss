@@ -1,0 +1,47 @@
+.container {
+    min-width: 100%;
+
+    .back {
+        display: flex;
+        justify-content: space-evenly;
+
+        .bi {
+            font-size: 30px;
+            cursor: pointer;
+            margin-left: 5rem;
+        }
+    }
+
+    .nombre-sucursal {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 3rem;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+
+
+    .row {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+
+        .back{
+            .bi{
+                margin-left: 0px;
+            }
+        }
+        .row {
+            width: 100%;
+        }
+    }
+}

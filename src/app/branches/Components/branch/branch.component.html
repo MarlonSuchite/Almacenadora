@@ -1,4 +1,37 @@
-<h1>Esta es una sucursal con las bodegas</h1>
-Holasdfasdfasdfas
-<button (click)="goBack()">regresar</button>
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<div class="container">
+  <section class="back">
+    <div>
+      <i class="bi bi-arrow-left mt-3" (click)="goBack()"></i>
+    </div>
+
+    <div class="nombre-sucursal">
+      <h2>Nombre Sucursal</h2>
+    </div>
+  </section>
+
+  <section class="row gy-4">
+    <div class="col-12" *ngFor="let bodega of bodegas">
+      <div class="card">
+        <div class="card-header">
+          {{ bodega.name }}
+        </div>
+        <div class="card-body">
+          <!-- <h5 class="card-title">Disponibilidad: {{bodega.status}}</h5> -->
+          <p class="card-text">📑 Descripcion: {{ bodega.description }}.</p>
+          <p class="card-text">🏢 Tamaño: {{ bodega.size }}</p>
+          <p class="card-text">🗺 Direccion: {{ bodega.address }}</p>
+          <p class="card-text">💲 Precio: {{ bodega.price }}</p>
+          <button class="btn btn-dark">
+            <i class="bi bi-clipboard-check"></i>
+          </button>
+          <button class="btn btn-dark mx-2">
+            <i class="bi bi-pencil-fill"></i>
+          </button>
+          <button class="btn btn-dark">
+            <i class="bi bi-trash3-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

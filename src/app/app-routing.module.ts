@@ -1,5 +1,10 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {
+  RouterModule,
+  Routes,
+  provideRouter,
+  withInMemoryScrolling
+} from '@angular/router';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
@@ -34,7 +39,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled' // Parte para que vuelva al mismo lugar cuando se da Location.back()
+    })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
