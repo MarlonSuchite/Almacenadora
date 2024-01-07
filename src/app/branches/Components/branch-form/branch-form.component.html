@@ -1,0 +1,37 @@
+<div class="container">
+  <section class="text-center">
+    <h1 *ngIf="!mode">Agregar Sucursal</h1>
+    <h1 *ngIf="mode">Editar Sucursal</h1>
+  </section>
+
+  <form class="row m-auto">
+    <mat-form-field class="col-lg-4 col-md-6">
+      <mat-label>Nombre Sucursal</mat-label>
+      <input matInput type="text" />
+    </mat-form-field>
+
+    <mat-form-field class="col-lg-4 col-md-6">
+      <mat-label>Ubicacion</mat-label>
+      <input matInput type="text" />
+    </mat-form-field>
+
+    <mat-form-field class="col-lg-4 col-md-6">
+      <mat-label>Parqueo</mat-label>
+      <mat-select>
+        <mat-option>Si</mat-option>
+        <mat-option>No</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="col-lg-4 col-md-6">
+      <mat-label>Telefono de la empresa</mat-label>
+      <input matInput type="number" />
+    </mat-form-field>
+  </form>
+
+  <section class="buttons d-flex justify-content-center flex-wrap">
+    <button class="btn btn-dark flex-grow-1 mt-2">Agregar</button>
+    <button class="btn btn-danger mx-2 flex-grow-1 mt-2">Cancelar</button>
+  </section>
+</div>
+`

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-branch-list',
@@ -38,9 +38,24 @@ export class BranchListComponent {
     }
   ];
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private activadteRoute: ActivatedRoute
+  ) {}
 
   goBranch() {
     this.router.navigate(['/branches/branch']);
+  }
+
+  //add
+  goBranchForm(): void {
+    this.router.navigate(['/branches/branch-form']);
+  }
+
+  //Update
+  goBranchFormUpdate(): void {
+    this.router.navigate(['/branches/branch-form'], {
+      queryParams: { id: 1 }
+    });
   }
 }
