@@ -1,6 +1,5 @@
-import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-branch',
@@ -50,10 +49,12 @@ export class BranchComponent implements OnInit {
       price: 123
     }
   ];
+  totalElements = this.bodegas.length;
+  pageSize = 2;
 
   constructor(
-    private location: Location,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -63,6 +64,18 @@ export class BranchComponent implements OnInit {
   }
 
   goBack() {
-    this.location.back();
+    this.router.navigate(['/branches/branch-list']);
+  }
+
+  pagination(event: any): void {
+    console.log(event);
+    this.router.navigate([], {
+      queryParams: {
+        page: event.pageIndex + 1,
+        search: '',
+        size: 0,
+        sort: ''
+      }
+    });
   }
 }
